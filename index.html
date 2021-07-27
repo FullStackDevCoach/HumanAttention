@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Counting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome style-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <script src="./timeme.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- PreLoader  -->
+    <div id="preloader"></div>
+    <!-- PreLoader  -->
+    <div class="wrapper" id="main">
+      <div class="top">
+        <div class="container-fluid">
+          <div class="top-inner">
+            <div class="topleft">
+              <h2 data-toggle="modal" data-target="#exampleModalCenter">t</h2>
+           
+            </div>
+            <div class="topright">
+              <a href="#" class="connect-btn">connect wallet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <span id="height"></span> -->
+
+      <!-- Popup Modal  -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+          <!-- Graph  -->
+          <h6 class="times">Time</h6> 
+          <canvas id="myChart" ></canvas>
+          <!-- Graph  -->
+          
+          </div>
+        </div>
+      </div>
+      <!-- Popup Modal  -->
+
+      <!-- Change World Section  -->
+      <div class="change-world-wrapper">
+        <div class="container-fluid">
+          <div class="change-world-inner">
+            <div class="bgsection">
+              <img src="./assets/images/circle.jpg" alt="" />
+            </div>
+            <div class="time-section">
+              <h3><span id="timeInSeconds">0</span></h3>
+              <span>Hours of Human Attention</span>
+            </div>
+            <div class="attention">
+              <h1>Use your attention to change the world.</h1>
+            </div>
+            <div class="diving-section">
+              <pre>
+			<strong>D</strong>iving in the sea of information dusk to down,
+	It's harder for us to distinguish <strong>freedom</strong> from <strong>oppression</strong>
+						,  signal from noise.
+					It's not more information we need,
+					It's the relavence which is missing.
+						
+		On <span>t</span> , every individual's attention is translated into crypto
+		currencty, and is utilized to curate relevance for every individ-
+		ual.
+
+		<span>t</span>  is a world merely between readers and texts,
+					a consolation,
+					a web“detox manifesto” .
+
+			On <span>t</span>  , your attention helps the world to 
+					collaborate better.
+					<span>t</span> reveals the value of time itself.
+				
+			Start curating, publishing, or simply reading.
+	</pre
+              >
+            </div>
+            <div class="dive-deeper" id="area-of-interest-1">
+              <h4>Dive deeper...</h4>
+              <div class="row">
+                <div class="col-12">
+                  <img src="./assets/images/1st.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Change World Section  -->
+      <div class="phylosofy-culture">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="sub-culture">
+                <h2>Sub-Cultures</h2>
+                <h5>Relevance can only be created by its people.</h5>
+                <p>
+                  Every <span>t</span>&nbsp; community is a territory
+                  representing a autonomous decen tralized sub-culture. Governed
+                  by their own citizens. <span>t</span>&nbsp; territories are
+                  free to create their own relevance through their reading
+                  lists. All contributors within terriroty will profit
+                  collectively when their cul- ture thrives.
+                </p>
+                <p>
+                  In initial launcing, 5 territories are bootstraped and will be
+                  instant avaiable for inhabitation. These are:
+                </p>
+                <h6>Crypto Wonderland:</h6>
+                <p>
+                  A crypto enangelists' community focused on blockchain
+                  technologyand project reviews, daily discussion of the crypto
+                  thunderstorms, underlying tech and market weather.
+                </p>
+                <h6>Time Square:</h6>
+                <p>
+                  What is trueth?Does it actually exist? On Time Square, all
+                  news are horizontally unfolded across the web for discussion
+                  and open debates. Bias, Justice, or just a tease? What do you
+                  have to say? Share in this passionate community to let more
+                  people's voice heard!
+                </p>
+                <h6>Bookwarms Alley:</h6>
+                <p>
+                  Are you a bookwarm, or at least trying to be? Where to
+                  allocate your writing sensibility and general curiosity? Come
+                  to the Bookwarms Alley and get a seat! Hear about what people
+                  say about books and movies, music and documentaries. Find your
+                  soulmate here and don't forget to get a coffee!
+                </p>
+                <h6>Duchamp Avenue:</h6>
+                <p>
+                  What is art in the modern context? Maybe our old friend Marcel
+                  Duchamp had already gone too far: Art is life! So, if you want
+                  to share this life with people like him, and explore the
+                  craziest ideas and funny facts, this is where you belong!
+                  Share your vision and an thetics in this artist's gang.
+                </p>
+                <h6>Moon River:</h6>
+                <p>
+                  “Moon river, wider than a mile I'm crossing you in style some
+                  day.” The most chic people in cyber space are here. They aim
+                  for the healthy, beautiful, and elegant. They understand life
+                  in another galaxy.If you are a dream maker, or a heart
+                  breaker, come to the river, the moon will show you the way.
+                </p>
+                <p>
+                  Made up your mind? Become the earliest citizen in one of the 5
+                  ter ritories today!
+                </p>
+
+                <div class="buttonmargin">
+                  <a href="#" class="book_passport"
+                    >b o o k &nbsp;a &nbsp;passport</a
+                  >
+                </div>
+              </div>
+              <div class="bottom-img">
+                <img src="./assets/images/2nd.png" alt="" />
+              </div>
+              <div class="roadmap">
+                <h2>Roadmap</h2>
+                <h5>Planet Launch</h5>
+                <p>
+                  Diving in the sea of information dusk to dawn, It's harder for
+                  us to distin guish signal from noise. It's not more
+                  information we need,
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="philosofy">
+                <h2>Philosophy</h2>
+                <p>
+                  Time, gravity, love. The forces that really kick ass are all
+                  invisible. <span>t</span>&nbsp; respects these humane values
+                  starting from respecting our attention on the web.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; is the first player in the web 3.0 space
+                  trying to monetize human attention in a simple matrix with the
+                  consensus achieved by Proof of Attention.<br />
+                  <span>t</span>&nbsp; is a decentralized media platform with an
+                  innovative humane incen tive to create, curate, and propagate
+                  feature articles under curation market mechanism. All
+                  participants on <span>t</span>&nbsp; network will be fairly
+                  reward ed for the value they co-contributed.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; native token, TXT (<span>t</span> token)
+                  is the first cryptocurrency in the unit of representing value
+                  created from 1hour curated human attention in the attention
+                  markets. This breaks the boundary between intrinsic human
+                  existence (time) and a spendable, flowable social value
+                  (Engagement).
+                </p>
+                <div class="buttonmargin">
+                  <a href="#" class="view-paper">View Paper</a>
+                </div>
+              </div>
+              <div class="good-design">
+                <h2>Good Design is as little design as possible</h2>
+                <p>
+                  Time, gravity, love. The forces that really kick ass are all
+                  invisible. <span>t</span>&nbsp; respects these humane values
+                  starting from respecting our attention on the web.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; is the first player in the web 3.0 space
+                  trying to monetize human attention in a simple matrix with the
+                  consensus achieved by Proof of At tention.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; is a decentralized media platform with an
+                  innovative humane incen tive to create, curate, and propagate
+                  feature articles under curation market mechanism. All
+                  participants on <span>t</span>&nbsp; network will be fairly
+                  rewarded for the value they co-contributed.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; native token, TXT (<span>t</span>&nbsp;
+                  token) is the first cryptocurrency in the unit of representing
+                  value created from 1hour curated human attention in the
+                  attention markets. This breaks the boundary between intrinsic
+                  human existence (time) and a spendable, flowable social value
+                  (Engagement).
+                </p>
+              </div>
+
+              <div class="freedom">
+                <h2>Freedom&Jurisdiction</h2>
+                <p>
+                  Diving in the sea of information dusk to dawn,<br />
+                  It's harder for us to distinguish signal from noise.<br />
+                  It's not more information we need,<br />
+                  It's the relavence which is missing.
+                </p>
+                <p>
+                  <span>t</span>&nbsp; is a world merely between readers and
+                  texts,<br />
+                  a consolation,<br />
+                  a web“detox manifesto"<br />
+                  . On <span>t</span>, your attention helps the world to<br />
+                  curate for the better.<br />
+                  <span>t</span> reveals the value of time itself.
+                </p>
+                <p>
+                  Start reading, publishing, or simply diving.<br />
+                  Make your <span>time</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roadmap Teritory  -->
+      <div class="teritory-full">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="full">
+                <h2>Full Decentralization</h2>
+                <p>
+                  Diving in the sea of informa tion dusk to dawn, It's harder
+                  for us to distin guish signal from noise. It's not more
+                  information we need,
+                </p>
+                <p>
+                  Diving in the sea of informa tion dusk to dawn, It's harder
+                  for us to distin guish signal from noise. It's not more
+                  information we need,
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="territory">
+                <h2>Territory Launch</h2>
+                <p>
+                  Diving in the sea of informa tion dusk to dawn, It's harder
+                  for us to distin guish signal from noise. It's not more
+                  information we need,
+                </p>
+                <p>
+                  Diving in the sea of informa tion dusk to dawn, It's harder
+                  for us to distin guish signal from noise. It's not more
+                  information we need,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="register">
+          <h2>Land on t2 planet</h2>
+          <a class="register-btn" href="#">Register</a>
+        </div>
+      </div>
+      <!-- Roadmap Teritory  -->
+    </div>
+
+    <!-- Jquery Js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="./config.js"></script>
+
+   
+  </body>
+</html>
